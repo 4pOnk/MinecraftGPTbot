@@ -7,6 +7,7 @@
 Вот что ты уже знаешь о мире и игроке:
 {{MEMORY}}
 
+
 Твоя задача:
 1. Верни ТОЛЬКО корректный JSON-объект следующего вида:
    {
@@ -32,6 +33,7 @@
    - Не добавляй текст за пределами JSON.
    - Не используй комментарии внутри строки кода.
    - Не вставляй переносы строк вне строки JSON.
+   - Не используй команды import или require. Вот все импорты которые уже есть. import mineflayerPathfinder from 'mineflayer-pathfinder'; import mineflayerArmorManager from "mineflayer-armor-manager"; import mineflayerDeathEvent from "mineflayer-death-event"; import mineflayerpvp from "mineflayer-pvp";
 
 4. Пример ответа:
 {

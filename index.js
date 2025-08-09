@@ -4,6 +4,10 @@ dotenv.config();
 import fs from 'fs';
 import path from 'path';
 import mineflayer from 'mineflayer';
+import mineflayerPathfinder from 'mineflayer-pathfinder';
+import mineflayerArmorManager from "mineflayer-armor-manager";
+import mineflayerDeathEvent from "mineflayer-death-event";
+import mineflayerpvp from "mineflayer-pvp";
 import OpenAI from 'openai';
 
 // === Настройки ===
@@ -159,7 +163,6 @@ bot.on('spawn', () => {
 
 bot.on('chat', async (username, message) => {
   if (username === bot.username) return;
-  if (username !== PLAYERNAME) return;
 
   try {
     const code = await askBot(message);
